@@ -1,0 +1,96 @@
+:root {
+    --grey20: #EBEBEB;
+    --grey90: #0A0B0D;
+    --red: #ff0000;
+  }
+
+
+  @media (prefers-color-scheme: light) {
+    body, a {
+        background: var(--grey20);
+        color: var(--grey90);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body, a {
+        background: var(--grey90);
+        color: var(--grey20);
+    }
+  }
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'footer footer footer footer footer footer'
+    ;
+    grid-gap: 1vw;
+}
+
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1vw;
+    grid-template-areas: 
+        'logo nav nav nav nav nav'
+    ;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    grid-area: logo;
+
+}
+.nav {
+    grid-area: nav;
+}
+
+
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+.header__nav_style:hover {
+    color: var(--red);
+}
+
+a:visited {
+    color: var(--red);
+}
+
+input:focus {
+    background-color: var(--red);
+}
+
+a:active {
+    color: var(--red);
+}
+
+input::placeholder {
+    color: var(--grey90);
+}
+
+a:hover:before {
+    content: 'this is a link';
+}
+
+a:active:after {
+    content: 'your are click'
+}
