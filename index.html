@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Home work</title>
+</head>
+
+<body class="wrapper body_color">
+
+ 
+    <header class="header">
+            <!-- Логотип -->
+            <a href="/" class="logo">
+                <img src="" alt="Logotype" class="">
+            </a>
+            <!-- ==================== -->
+
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="menu">
+                    <li itemprop="name" role="none">
+                        <a itemprop="url" role="menuitem" aria-label="Links" href="#link1" class="header__nav_style">Link 1</a>
+                    </li>
+                    <li itemprop="name" role="none">
+                        <a itemprop="url" role="menuitem" aria-label="Links" href="#link2" class="header__nav_style">Link 2</a>
+                    </li>
+                    <li itemprop="name" role="none">
+                        <a itemprop="url" role="menuitem" aria-label="Links" href="#link3" class="header__nav_style">Link 3</a>
+                    </li>
+              </ul>
+            </nav>
+            <!-- ==================== -->
+
+    </header>
+
+
+    <main class="main">
+        <article>
+            <section>
+                <h1>Title h1</h1>
+            </section>
+
+            <!-- заголовки різної ваги -->
+            <section>
+                <h2>Title h2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates.</p>
+            </section>
+            <!-- ==================== -->
+
+            <!-- Стили текста -->
+            <section>
+                <h3>Texts</h3>
+                <dl>
+                    <dt>текст виділений</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates.</dd>
+
+                    <dt>текст підкреслений</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates.</dd>
+
+                    <dt>текст закреслений</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates.</dd>
+
+                    <dt>текст жирний</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates.</dd>
+
+                    <dt>текст косий</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates.</dd>
+                </dl>
+            </section>
+            <!-- ==================== -->
+
+            <!-- Списки -->
+            <ul>
+                <li>
+                    <ul>
+                        <li>item_15</li>
+                        <li>item_25</li>
+                        <li>item_35</li>
+                        <li>item_45</li>
+                        <li>item_55</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <ol>item_15</ol>
+                        <ol>item_25</ol>
+                        <ol>item_35</ol>
+                        <ol>item_45</ol>
+                        <ol>item_55</ol>
+                    </ul>
+                </li>
+                <li>
+                    <dl>
+                        <dt>item_15</dt>
+                        <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates.</dd>
+                    </dl>
+                </li>
+            </ul>
+            <!-- ==================== -->
+
+            <!-- Кусок кода -->
+            <section id="link1">
+                <h3>Code</h3>
+                <code>console.log('Hello World!')</code>
+            </section>
+            <!-- ==================== -->
+
+            <!-- текст який зберігає пробіли і переноси -->
+            <section>
+                <h3>White space</h3>
+                <p>Lorem ipsum dolor,        sit amet consectetur adipisicing elit.
+                    Fugit, deserunt.</p>
+            </section>
+            <!-- ==================== -->
+
+            <!-- розділення горизонтальне -->
+            <section id="link2">
+                <h3>hr & br</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </section>
+            <!-- ==================== -->
+            
+            <!-- Таблица -->
+            <section>
+                <h3>Table</h3>
+                <table border="1" cellspacing="0" cellpadding="0" width="500" height="500" align="center">
+                    <tr>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td colspan="30">4</td>
+                    </tr>
+                 </table>
+            
+                  <table border="1" cellspacing="20" cellpadding="20" width="500" height="500" align="center">
+                  <tr>
+                    <td rowspan="3">1</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                  </tr>
+                  </table>  
+            </section>
+            <!-- ==================== -->
+
+            <!-- Формы -->
+            <section>
+                <h3>Forms</h3>
+
+                <form>
+	                <input type="text" name="Имя поля" value="" placeholder="Логин" maxlength="8" minlength="6" required>
+                    <input type="password" placeholder="Password" maxlength="8">
+            	    <br>
+	                <input type="file" multiple>
+            	    <br>
+	                <label>
+	                	<input type="checkbox"> Русский
+	                </label>
+	                <label>
+	                	<input type="checkbox"> Английский
+	                </label>
+	                <br>
+	                <label>
+	                	<input type="radio" name="pol"> М
+	                </label>
+	                <label>
+	                	<input type="radio" name="pol"> Ж
+	                </label>
+
+	                <fieldset>
+	                	<legend>Кнопки</legend>
+	                	<input type="reset" value="Удалить все">
+	                	<br>
+	                	<input type="submit" value="Отправить">
+	                	<br>
+	                	<button>Отправка</button>
+	                	<br>
+		                <input type="image" src="photo.jpg" height="100" width="100">
+	                </fieldset>
+                    <select>
+                    	<optgroup label="Страна 1">
+                    		<option value="">Город 1_1</option>
+                    		<option value="">Город 1_2</option>
+                    		<option value="">Город 1_3</option>
+                    	</optgroup>
+                    		<optgroup label="Страна 2">
+                    		<option value="">Город 2_1</option>
+                    		<option value="">Город 2_2</option>
+                    		<option value="">Город 2_3</option>
+                    	</optgroup>
+                    </select>
+                </form>
+            </section>
+            <!-- ==================== -->
+
+            <!-- Картинка -->
+            <section id="link4">
+                <h3>Picture</h3>
+                <figure>
+
+                    <picture>
+            
+                      <source type="image/webp"
+                              media="(-webkit-min-device-pixel-ratio: 3) and (min-width: 745px)"
+                              srcset="img/DesktopGrill@3.webp">
+                      <source type="image/png"
+                              media="(-webkit-min-device-pixel-ratio: 3) and (min-width: 745px)"
+                              srcset="img/DesktopGrill@3.png">
+                      <source type="image/webp"
+                              media="(-webkit-min-device-pixel-ratio: 3) and (max-width: 744px)"
+                              srcset="img/PhoneSM@3.webp">
+                      <source type="image/png"
+                              media="(-webkit-min-device-pixel-ratio: 3) and (max-width: 744px)"
+                              srcset="img/PhoneSM@3.png">
+            
+                      <source type="image/webp"
+                              media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 745px)"
+                              srcset="img/DesktopGrill@2.webp">
+                      <source type="image/png"
+                              media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 745px)"
+                              srcset="img/DesktopGrill@2.png">
+                      <source type="image/webp"
+                              media="(-webkit-min-device-pixel-ratio: 2) and (max-width: 744px)"
+                              srcset="img/PhoneSM@2.webp">
+                      <source type="image/png"
+                              media="(-webkit-min-device-pixel-ratio: 2) and (max-width: 744px)"
+                              srcset="img/PhoneSM@2.png">
+            
+                      <source type="image/webp"
+                              media="(-webkit-min-device-pixel-ratio: 1) and (min-width: 745px)"
+                              srcset="img/DesktopGrill@1.webp">
+                      <source type="image/png"
+                              media="(-webkit-min-device-pixel-ratio: 1) and (min-width: 745px)"
+                              srcset="img/DesktopGrill@1.png">
+                      <source type="image/webp"
+                              media="(-webkit-min-device-pixel-ratio: 1) and (max-width: 744px)"
+                              srcset="img/PhoneSM@1.webp">
+                      <source type="image/png"
+                              media="(-webkit-min-device-pixel-ratio: 1) and (max-width: 744px)"
+                              srcset="img/PhoneSM@1.png">
+            
+                       <img
+                              srcset="img/PhoneSM@3.png 3x,
+                                      img/PhoneSM@2.png 2x,
+                                      img/PhoneSM@1.png 1x"
+                              src="img/PhoneSM@1.png" alt="#" class="">
+            
+                    </picture>
+            
+                  </figure>
+            </section>
+            <!-- ==================== -->
+
+
+        </article>
+
+
+
+    </main>
+
+
+    <footer class="footer">
+        <ul>
+            <li>
+              <ul aria-labelledby="social">
+                <li id="social" class="visually-hidden">Социальные сети</li>
+                <li aria-labelledby="Facebook">
+                  <a aria-label="Внешняя ссылка на страницу в Facebook" id="Facebook" href="#" target="_blank" rel="noopener noreferrer">
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li aria-labelledby="Instagram">
+                  <a aria-label="Внешняя ссылка на страницу в Instagram" id="Instagram" href="#" target="_blank" rel="noopener noreferrer">
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li aria-labelledby="Behance">
+                  <a aria-label="Внешняя ссылка на страницу в Behance" id="Behance" href="#" target="_blank" rel="noopener noreferrer">
+                    <span>Behance</span>
+                  </a>
+                </li>
+                <li aria-labelledby="LinkedIn">
+                  <a aria-label="Внешняя ссылка на страницу в LinkedIn" id="LinkedIn" href="#" target="_blank" rel="noopener noreferrer">
+                    <span>LinkedIn</span>
+                  </a>
+               </li>
+              </ul>
+            </li>
+        </ul>
+    </footer>
+
+
+</body>
+</html>
